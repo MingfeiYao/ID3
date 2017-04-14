@@ -11,6 +11,8 @@ int main(int argc, char* argv[]) {
   vector< vector<int> > noisyData = getData(0);
   cout << "Noisy data loaded ... " << endl;
 
+  Tree t(cleanData);
+  cout << t.plot() << endl;
 }
 
 vector< vector<int> > getData(int clean) {

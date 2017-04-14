@@ -3,6 +3,8 @@
 #include <vector>
 #include <sstream>
 
+#include "tree.h"
+
 using namespace std;
 
 vector< vector<int> > getData(int clean);
