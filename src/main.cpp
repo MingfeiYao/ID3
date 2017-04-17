@@ -13,6 +13,13 @@ int main(int argc, char* argv[]) {
 
   Tree t(cleanData);
   cout << t.plot() << endl;
+
+  int x[4] = {1, 1, 0, 0};
+  vector<int> v(x, x+4);
+  int y[4] = {1, 0, 1, 0};
+  vector<int> w(y, y+4);
+  cout << "Tree calculations:" << endl;
+  cout << t.infoGain(v, w) << endl;
 }
 
 vector< vector<int> > getData(int clean) {
